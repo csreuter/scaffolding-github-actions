@@ -19,4 +19,8 @@ terraform {
       version = "~> 3.0"
     }
   }
+
+  backend "local" {
+    path = "state/terraform.tfstate"
+  }
 }
